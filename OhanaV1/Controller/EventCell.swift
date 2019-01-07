@@ -15,7 +15,7 @@ class EventCell: UITableViewCell {
     @IBOutlet weak var eventDate: UILabel!
     @IBOutlet weak var eventAddress: UILabel!
     
-    func setEvent(event: Event) {
+    func updateCellUI(event: Event) {
         eventImageView.image = event.image
         eventNameLabel.text = event.name
         eventDate.text = event.date
