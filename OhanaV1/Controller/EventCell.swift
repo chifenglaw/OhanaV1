@@ -14,11 +14,13 @@ class EventCell: UITableViewCell {
     @IBOutlet weak var eventImageView: UIImageView!
     @IBOutlet weak var eventDate: UILabel!
     @IBOutlet weak var eventAddress: UILabel!
+    @IBOutlet weak var eventID: UILabel!
     
     func updateCellUI(event: Event) {
         eventImageView.image = event.image
         eventNameLabel.text = event.name
         eventDate.text = event.date
         eventAddress.text = event.address
+        eventID.text = String(event.id)
     }
 }

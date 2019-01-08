@@ -10,18 +10,21 @@ import Foundation
 import UIKit
 
 class Event {
+    var id: Int
     var image: UIImage
     var name: String
     var date: String
     var address: String
+    var detail: String
+
     
-    init(image: UIImage,
-         name: String,
-         date: String,
-         address: String) {
+    init(id: Int, image: UIImage, name: String,
+         date: String, address: String, detail: String) {
+        self.id = id
         self.image = image
         self.name = name
         self.date = date
         self.address = address
+        self.detail = detail
     }
 }

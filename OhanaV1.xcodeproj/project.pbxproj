@@ -14,6 +14,8 @@
 		0105209321E17FBE00652FB4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105209221E17FBE00652FB4 /* Event.swift */; };
 		0105209D21E1915000652FB4 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105209C21E1915000652FB4 /* EventListViewController.swift */; };
 		010520C321E2BE9800652FB4 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010520C221E2BE9800652FB4 /* EventCell.swift */; };
+		01F4B5E321E3C95300560842 /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4B5E221E3C95300560842 /* EventDetailVC.swift */; };
+		01F4B60521E42EE300560842 /* EventMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4B60421E42EE300560842 /* EventMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		0105209221E17FBE00652FB4 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		0105209C21E1915000652FB4 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		010520C221E2BE9800652FB4 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		01F4B5E221E3C95300560842 /* EventDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
+		01F4B60421E42EE300560842 /* EventMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 			children = (
 				010520C221E2BE9800652FB4 /* EventCell.swift */,
 				0105209C21E1915000652FB4 /* EventListViewController.swift */,
+				01F4B5E221E3C95300560842 /* EventDetailVC.swift */,
+				01F4B60421E42EE300560842 /* EventMapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +183,8 @@
 				010520C321E2BE9800652FB4 /* EventCell.swift in Sources */,
 				0105209321E17FBE00652FB4 /* Event.swift in Sources */,
 				0105207D21E17BD300652FB4 /* AppDelegate.swift in Sources */,
+				01F4B60521E42EE300560842 /* EventMapViewController.swift in Sources */,
+				01F4B5E321E3C95300560842 /* EventDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
