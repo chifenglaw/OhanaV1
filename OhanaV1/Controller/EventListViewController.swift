@@ -14,6 +14,10 @@ class EventListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    @IBAction func mapButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "eventMap", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -78,13 +82,13 @@ class EventListViewController: UIViewController {
             name: "Great Music from Great Ballets",
             date: "Jan 19 Sat 7:00pm",
             address: "Steinway Piano Galley in Walnut Creek",
-            detail: ""
+            detail: "1605 Bonanza St, Walnut Creek, CA 94596"
         )
 
         let event7 = Event(
             id: 7,
             image: UIImage(named: "san_ramon")!,
-            name: "FUN ON THE FARM! OLD FASHIONED GAMES ",
+            name: "FUN ON THE FARM! OLD FASHIONED GAMES",
             date: "February 23 11:00AM - 2:00PM",
             address: "Forest Home Farms Historic Park",
             detail: ""
@@ -123,21 +127,28 @@ extension EventListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let currentCell = tableView.cellForRow(at: indexPath)! as! EventCell
         eventID = Int(currentCell.eventID.text!)!
-        print("performe segue for id: \(eventID)")
+//        performSegue(withIdentifier: "eventDetail", sender: self)
+//        print("performe segue for id: \(eventID)")
     }
     
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if identifier == "eventDetail" {
-            performSegue(withIdentifier: "eventDetail", sender: self)
-        }
+//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+//        if identifier == "eventDetail" {
+////            performSegue(withIdentifier: "eventDetail", sender: self)
+//        }
+//
+//        return true
+//    }
+    
 
-        return true
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let eventDetailVC = segue.destination as! EventDetailVC
-        if let indexPath = tableView.indexPathForSelectedRow {
-            eventDetailVC.eventID = eventID
+        if segue.identifier == "eventDetail" {
+            let eventDetailVC = segue.destination as! EventDetailVC
+            if let indexPath = tableView.indexPathForSelectedRow {
+                eventDetailVC.eventID = eventID
+            }
+        } else if segue.identifier == "eventMap" {
+            let evengMapVC = segue.destination as! EventMapViewController
         }
         print("prepare segue for id: \(eventID)")
     }
