@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class EventListViewController: UIViewController {
     var events: [Event] = []
@@ -21,12 +22,13 @@ class EventListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tableView.separatorColor = .green
+        self.tableView.separatorColor = UIColor(hexString: "ff7e67")
         self.tableView.separatorStyle = .singleLine
         self.tableView.separatorInset = UIEdgeInsets.zero
         self.tableView.layoutMargins = UIEdgeInsets.zero
         
         events = loadEvents()
+        
         tableView.dataSource = self
         tableView.delegate = self
         // Do any additional setup after loading the view.
