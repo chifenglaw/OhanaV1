@@ -20,7 +20,7 @@ class EventCell: UITableViewCell {
         eventImageView.image = event.image
         eventNameLabel.text = event.name
         eventDate.text = event.date
-        eventAddress.text = event.address
+        eventAddress.text = event.city
         eventID.text = String(event.id)
     }
 }

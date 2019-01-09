@@ -14,8 +14,10 @@
 		0105209321E17FBE00652FB4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105209221E17FBE00652FB4 /* Event.swift */; };
 		0105209D21E1915000652FB4 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105209C21E1915000652FB4 /* EventListViewController.swift */; };
 		010520C321E2BE9800652FB4 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010520C221E2BE9800652FB4 /* EventCell.swift */; };
+		0127203821E58F2200B75EEC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127203721E58F2200B75EEC /* LoginViewController.swift */; };
 		01F4B5E321E3C95300560842 /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4B5E221E3C95300560842 /* EventDetailVC.swift */; };
 		01F4B60521E42EE300560842 /* EventMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4B60421E42EE300560842 /* EventMapViewController.swift */; };
+		779FF6A4AC7E33C467672150 /* Pods_OhanaV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C037C7E0A28F775A2E5FBF /* Pods_OhanaV1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +30,12 @@
 		0105209221E17FBE00652FB4 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		0105209C21E1915000652FB4 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		010520C221E2BE9800652FB4 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		0127203721E58F2200B75EEC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		01F4B5E221E3C95300560842 /* EventDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
 		01F4B60421E42EE300560842 /* EventMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMapViewController.swift; sourceTree = "<group>"; };
+		4D433200A032B7E820A40045 /* Pods-OhanaV1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaV1.release.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaV1/Pods-OhanaV1.release.xcconfig"; sourceTree = "<group>"; };
+		5A7A406D1DEE8753D91960C7 /* Pods-OhanaV1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaV1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaV1/Pods-OhanaV1.debug.xcconfig"; sourceTree = "<group>"; };
+		D9C037C7E0A28F775A2E5FBF /* Pods_OhanaV1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OhanaV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				779FF6A4AC7E33C467672150 /* Pods_OhanaV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +55,8 @@
 			children = (
 				0105207B21E17BD300652FB4 /* OhanaV1 */,
 				0105207A21E17BD300652FB4 /* Products */,
+				0C8A47BA2CD043FDAB328077 /* Pods */,
+				F5CC1D0C2EA4BFFF36AE7E33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +96,7 @@
 				0105209C21E1915000652FB4 /* EventListViewController.swift */,
 				01F4B5E221E3C95300560842 /* EventDetailVC.swift */,
 				01F4B60421E42EE300560842 /* EventMapViewController.swift */,
+				0127203721E58F2200B75EEC /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -108,6 +118,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		0C8A47BA2CD043FDAB328077 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A7A406D1DEE8753D91960C7 /* Pods-OhanaV1.debug.xcconfig */,
+				4D433200A032B7E820A40045 /* Pods-OhanaV1.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F5CC1D0C2EA4BFFF36AE7E33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9C037C7E0A28F775A2E5FBF /* Pods_OhanaV1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0105208B21E17BD500652FB4 /* Build configuration list for PBXNativeTarget "OhanaV1" */;
 			buildPhases = (
+				ECC7DC603D074EDEB3678427 /* [CP] Check Pods Manifest.lock */,
 				0105207521E17BD300652FB4 /* Sources */,
 				0105207621E17BD300652FB4 /* Frameworks */,
 				0105207721E17BD300652FB4 /* Resources */,
+				9FA18C46BA301A21EC650461 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,11 +203,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9FA18C46BA301A21EC650461 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OhanaV1/Pods-OhanaV1-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OhanaV1/Pods-OhanaV1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECC7DC603D074EDEB3678427 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OhanaV1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0105207521E17BD300652FB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0127203821E58F2200B75EEC /* LoginViewController.swift in Sources */,
 				0105209D21E1915000652FB4 /* EventListViewController.swift in Sources */,
 				010520C321E2BE9800652FB4 /* EventCell.swift in Sources */,
 				0105209321E17FBE00652FB4 /* Event.swift in Sources */,
@@ -328,6 +417,7 @@
 		};
 		0105208C21E17BD500652FB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A7A406D1DEE8753D91960C7 /* Pods-OhanaV1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -346,6 +436,7 @@
 		};
 		0105208D21E17BD500652FB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D433200A032B7E820A40045 /* Pods-OhanaV1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

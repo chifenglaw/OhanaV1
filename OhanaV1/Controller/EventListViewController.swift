@@ -21,6 +21,11 @@ class EventListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.tableView.separatorColor = .green
+        self.tableView.separatorStyle = .singleLine
+        self.tableView.separatorInset = UIEdgeInsets.zero
+        self.tableView.layoutMargins = UIEdgeInsets.zero
+        
         events = loadEvents()
         tableView.dataSource = self
         tableView.delegate = self
@@ -33,6 +38,7 @@ class EventListViewController: UIViewController {
             image: UIImage(named: "latern_festival")!,
             name: "Alameda Latern Light Festival",
             date: "Jan 11 Fri 5:00PM - 11:00PM",
+            city: "Pleasanton",
             address: "Alameda County Fairgrounds, Pleasanton, CA",
             detail: ""
         )
@@ -42,6 +48,7 @@ class EventListViewController: UIViewController {
             image: UIImage(named: "cruise")!,
             name: "2-Hour Twilight Cruise",
             date: "Mar 23 Sat 5:30PM – 7:30PM",
+            city: "San Francisco",
             address: "San Francisco, California",
             detail: ""
         )
@@ -50,7 +57,8 @@ class EventListViewController: UIViewController {
             id: 3,
             image: UIImage(named: "chocolate")!,
             name: "Chocolate Festival",
-            date: "March 30 Sat 10AM – 5:30PM",
+            date: "Mar 30 Sat 10AM – 5:30PM",
+            city: "San Francisco",
             address: "1199 9th Ave, San Francisco, California 94122",
             detail: ""
         )
@@ -62,6 +70,7 @@ class EventListViewController: UIViewController {
             image: UIImage(named: "preschool")!,
             name: "Preschool Performance Series",
             date: "March 1 Friday",
+            city: "Danville",
             address: "233 Front Street, Danville, CA 94526",
             detail: ""
         )
@@ -71,6 +80,7 @@ class EventListViewController: UIViewController {
             image: UIImage(named: "asian_art")!,
             name: "Asian Art Museum Free Admission Day",
             date: "February 3 Sunday",
+            city: "San Francisco",
             address: "200 Larkin Street San Francisco, CA",
             detail: ""
         )
@@ -81,6 +91,7 @@ class EventListViewController: UIViewController {
             image: UIImage(named: "diablo_ballet")!,
             name: "Great Music from Great Ballets",
             date: "Jan 19 Sat 7:00pm",
+            city: "Walnut Creek",
             address: "Steinway Piano Galley in Walnut Creek",
             detail: "1605 Bonanza St, Walnut Creek, CA 94596"
         )
@@ -90,6 +101,7 @@ class EventListViewController: UIViewController {
             image: UIImage(named: "san_ramon")!,
             name: "FUN ON THE FARM! OLD FASHIONED GAMES",
             date: "February 23 11:00AM - 2:00PM",
+            city: "San Ramon",
             address: "Forest Home Farms Historic Park",
             detail: ""
         )
@@ -100,6 +112,7 @@ class EventListViewController: UIViewController {
             image: UIImage(named: "thomas")!,
             name: "Day Out With Thomas",
             date: "Jul 26 - Aug 4",
+            city: "Felton",
             address: "5401 Graham Hill Road, Felton, CA 95018",
             detail: ""
         )

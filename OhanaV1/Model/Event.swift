@@ -16,14 +16,17 @@ class Event {
     var date: String
     var address: String
     var detail: String
+    var city: String
 
     
     init(id: Int, image: UIImage, name: String,
-         date: String, address: String, detail: String) {
+         date: String, city: String,
+         address: String, detail: String) {
         self.id = id
         self.image = image
         self.name = name
         self.date = date
+        self.city = city
         self.address = address
         self.detail = detail
     }
