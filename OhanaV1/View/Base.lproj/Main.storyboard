@@ -529,7 +529,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asian_art" translatesAutoresizingMaskIntoConstraints="NO" id="2sW-wH-QXt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="latern_festival" translatesAutoresizingMaskIntoConstraints="NO" id="2sW-wH-QXt">
                                 <rect key="frame" x="16" y="20" width="160" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Ujj-gs-oKB"/>
@@ -538,10 +538,10 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="AX6-3W-L40">
-                                <rect key="frame" x="188" y="26" width="234" height="74"/>
+                                <rect key="frame" x="188" y="26" width="211" height="74"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asian Art Musuem Free Admission" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93z-Qb-XKz">
-                                        <rect key="frame" x="0.0" y="0.0" width="234" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alameda Lantern Light Festival" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93z-Qb-XKz">
+                                        <rect key="frame" x="0.0" y="0.0" width="211" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="k2h-fB-oky"/>
                                         </constraints>
@@ -549,14 +549,14 @@
                                         <nil key="textColor"/>
                                         <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feb 3 Saturday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORJ-ta-6Nl">
-                                        <rect key="frame" x="0.0" y="29" width="234" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feb 11 Fri 5PM - 11PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORJ-ta-6Nl">
+                                        <rect key="frame" x="0.0" y="29" width="211" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Francisco" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0O-3y-7Sg">
-                                        <rect key="frame" x="0.0" y="53" width="234" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pleasanton" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0O-3y-7Sg">
+                                        <rect key="frame" x="0.0" y="53" width="211" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="wkH-WV-X8c"/>
                                         </constraints>
@@ -874,13 +874,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="asian_art" width="1600" height="1068"/>
         <image name="background" width="1800" height="1192.5"/>
         <image name="boy" width="200" height="200"/>
         <image name="calendar" width="933" height="1080"/>
         <image name="comment" width="512" height="512"/>
         <image name="favorite" width="512" height="512"/>
         <image name="girl" width="1200" height="1200"/>
+        <image name="latern_festival" width="1200" height="628"/>
         <image name="location_icon" width="300" height="429"/>
         <image name="logo" width="1024" height="1024"/>
         <image name="profile_picture" width="320" height="320"/>
@@ -890,7 +890,6 @@
         <image name="ticket_icon" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pBl-5F-skK"/>
         <segue reference="KF8-5c-0OY"/>
     </inferredMetricsTieBreakers>
 </document>

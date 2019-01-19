@@ -32,6 +32,8 @@ class EventListViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         // Do any additional setup after loading the view.
+        
+        
     }
     
     func loadEvents() -> [Event] {
@@ -39,7 +41,7 @@ class EventListViewController: UIViewController {
             id: 1,
             image: UIImage(named: "latern_festival")!,
             name: "Alameda Latern Light Festival",
-            date: "Jan 11 Fri 5:00PM - 11:00PM",
+            date: "Feb 11 Fri 5:00PM - 11:00PM",
             city: "Pleasanton",
             address: "Alameda County Fairgrounds, Pleasanton, CA",
             detail: ""
