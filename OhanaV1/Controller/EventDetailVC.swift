@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class EventDetailVC: UIViewController {
     
@@ -18,6 +19,25 @@ class EventDetailVC: UIViewController {
     @IBOutlet weak var eventDetailHeadingLabel: UILabel!
     @IBOutlet weak var eventDetailLabel: UILabel!
     
+    
+    @IBAction func moreDetailsButtonTapped(_ sender: UIButton) {
+        // showSafariVC(for: "https://www.google.com/")
+        
+        let url = "https://lanternlightfestival.com/"
+        sender.setTitle(url, for: .normal)
+        sender.contentHorizontalAlignment = .left
+        // sender.setTitle(url, for: .normal)
+        showSafariVC(for: url)
+    }
+    
+    func showSafariVC(for url: String) {
+        guard let url = URL(string: url) else {
+            return
+        }
+        
+        let safariVC = SFSafariViewController(url: url)
+        present(safariVC, animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +51,7 @@ class EventDetailVC: UIViewController {
         eventImage.image = UIImage(named: "latern_festival")!
         eventDateLabel.text = "Nov 30, 2018 - Jan 20, 2019"
         eventLocationLabel.text = "Alameda County Fairgrounds, Pleasanton, CA"
-        eventTicketLabel.text = "https://lanternlightfestival.com/"
+        // eventTicketLabel.text = "https://lanternlightfestival.com/"
         eventDetailHeadingLabel.text = "Details"
         eventDetailLabel.text = "Join us for a spectacular evening of dazzing lights, colors, shapes, and themes. The Lantern Light festival is a celebration of Chinese culture featuring massive handmade lanterns, inspiring performances, and children's activities"
     }
