@@ -21,12 +21,10 @@ class EventDetailVC: UIViewController {
     
     
     @IBAction func moreDetailsButtonTapped(_ sender: UIButton) {
-        // showSafariVC(for: "https://www.google.com/")
         
         let url = "https://lanternlightfestival.com/"
         sender.setTitle(url, for: .normal)
         sender.contentHorizontalAlignment = .left
-        // sender.setTitle(url, for: .normal)
         showSafariVC(for: url)
     }
     
