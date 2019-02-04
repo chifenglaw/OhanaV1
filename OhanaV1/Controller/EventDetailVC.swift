@@ -51,7 +51,7 @@ class EventDetailVC: UIViewController {
         eventLocationLabel.text = "Alameda County Fairgrounds, Pleasanton, CA"
         // eventTicketLabel.text = "https://lanternlightfestival.com/"
         eventDetailHeadingLabel.text = "Details"
-        eventDetailLabel.text = "Join us for a spectacular evening of dazzing lights, colors, shapes, and themes. The Lantern Light festival is a celebration of Chinese culture featuring massive handmade lanterns, inspiring performances, and children's activities"
+        eventDetailLabel.text = "Join us for a spectacular evening of dazzing lights, colors, shapes, and themes. The Lantern Light festival is a celebration of Chinese culture featuring massive handmade lanterns, inspiring performances, and children's activities #art #community #event"
     }
     
 }
